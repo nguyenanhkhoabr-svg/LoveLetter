@@ -3,69 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Love Letter ❤️</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Một điều muốn nói ❤️</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div id="heart-container"></div>
-<div id="flower-container"></div>
-    <div class="card">
-        <div class="envelope" id="envelope">
-             💌
-        </div>
 
-        <h1>Gửi Nghé iu ❤️</h1>
+    <!-- Nền ký tự -->
+    <canvas id="matrix"></canvas>
 
-        <p class="intro">
-            Chào Minh Thy !
-        </p>
 
-        <p class="sub">
-            Tui có một số điều muốn nói với cvang...
-        </p>
-        <div class="slider">
+    <!-- Nội dung chính -->
+    <main id="message">
 
-    <img id="slide" src="images/1.jpg" alt="Ảnh kỷ niệm">
+        <div id="text"></div>
 
-    <div class="controls">
+        <canvas id="heartCanvas"></canvas>
 
-        <button id="prevBtn">⬅</button>
+        <!-- Nút nhận quà -->
+        <button id="giftBtn">
+            🎁 Nhận quà cho bạn
+        </button>
 
-        <button id="nextBtn">➡</button>
+    </main>
 
-    </div>
 
-</div>
+    <!-- Nút bắt đầu -->
+    <button id="start">
+        Chạm vào màn hình ❤️
+    </button>
 
-        <button id="openBtn">
-    💌 Mở lá thư
-</button>
 
-     <div class="letter" id="letter">
+    <!-- Nhạc -->
+    <audio id="music" loop>
+        <source src="music/love.mp3" type="audio/mpeg">
+    </audio>
 
-    <p id="line1">
-        Trước hết tui cảm ơn bạn đã xuất hiện trong cuộc đời tui.
-    </p>
 
-    <p id="line2">
-        Với độ tuổi này tui không có gì trong tay, chẳng biết phải làm gì, ngoài việc thầm mong bạn đừng phải lòng ai khác! Vì ở đây, vẫn còn một người thương bạn rất nhiều.
-    </p>
-
-    <p id="line3">
-        Dù trời có sập xuống, tui cũng chẳng sợ, chỉ sợ một ngày bạn không còn cần tui nữa ❤️
-    </p>
-
-</div>
-
-    </div>
-<audio id="bgMusic" loop>
-    <source src="music/love.mp3" type="audio/mpeg">
-</audio>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
